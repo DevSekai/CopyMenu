@@ -17,7 +17,7 @@ Citizen.CreateThread( function()
             RageUI.Visible(RMenu:Get('PasteMenu', 'Principal'), not RageUI.Visible(RMenu:Get('PasteMenu', 'Principal')))
         end
         
-        RageUI.IsVisible(RMenu:Get('PasteMenu', 'Vehicle'), function()
+        RageUI.IsVisible(RMenu:Get('PasteMenu', 'Principal'), function()
             RageUI.Item.Checkbox("First coords", Copy.First, Copy.FirstState, {}, {
                 onChecked = function()
                     local Coords = GetEntityCoords(PlayerPedId())
